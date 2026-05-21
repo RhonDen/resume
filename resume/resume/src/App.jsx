@@ -251,6 +251,9 @@ function App() {
             <spline-viewer
               url="https://prod.spline.design/lP-OmJ1jEYSOttfK/scene.splinecode"
               className="splineViewer"
+              data-spline-interactions-enabled="true"
+              data-spline-mouse-enabled="true"
+              data-spline-touch-enabled="true"
             ></spline-viewer>
             <div className="splineOverlay" />
           </div>
