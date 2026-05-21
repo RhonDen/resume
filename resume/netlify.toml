@@ -5,6 +5,16 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "/resume.pdf"
+  to = "/resume.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/QR.jpg"
+  to = "/QR.jpg"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
