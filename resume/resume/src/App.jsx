@@ -201,11 +201,8 @@ function App() {
   }
 
   function startGcashPayment() {
-    // Mock QR redirect (placeholder screenshot)
-    // For real integration, you would: create payment on backend + render provider QR/txid
-    const qrUrl = `https://via.placeholder.com/400x400.png?text=GCash+QR+(${gcashTier})`
-
-    window.open(qrUrl, '_blank', 'noopener,noreferrer')
+    // Open the QR code image in a new tab
+    window.open('/QR.jpg', '_blank', 'noopener,noreferrer')
     setGcashStatus({
       kind: 'loading',
       message: `GCash QR opened. After payment, click Check status to confirm ${gcashTier} access.`,
@@ -242,8 +239,8 @@ function App() {
           <div className="landingInner">
             <div className="landingHero">
               <p className="landingKicker">Welcome</p>
-              <h1 className="landingHeroTitle">A quiet gateway to the resume</h1>
-              <p className="landingSubhead">This landing screen is a calm, glassy intro. Tap below to move to the unlock page.</p>
+              <h1 className="landingHeroTitle">This Is my Job Resume</h1>
+              <p className="landingSubhead">To Know More Click the Button Below</p>
               <button className="btn primary" onClick={() => setShowPayment(true)}>
                 View resume
               </button>
@@ -263,8 +260,8 @@ function App() {
                 Back
               </button>
               <div>
-                <h2>Unlock the Resume</h2>
-                <p className="muted">This page is structured as: landing page, payment gate, then resume content.</p>
+                <h2>Subscribe to Unlock My Full Potential</h2>
+                
               </div>
             </div>
 
@@ -294,7 +291,7 @@ function App() {
 
               <div className="gcash">
                 <h3>Pay with GCash</h3>
-                <p className="muted">Open the QR placeholder and then confirm payment status once your payment is complete.</p>
+                
 
                 <div className="gcash-row">
                   <div className="gcash-pill">Tier: {gcashTier}</div>
@@ -314,7 +311,7 @@ function App() {
 
               <div className="gift">
                 <h3>Gift code unlock</h3>
-                <p className="muted">This is a playful unlock page. Enter the gift code to open the resume.</p>
+                
 
                 <div className="gift-row">
                   <input
@@ -332,7 +329,7 @@ function App() {
 
                 {giftStatus ? <p className={giftStatus.kind === 'error' ? 'err' : giftStatus.kind === 'ok' ? 'ok' : ''}>{giftStatus.message}</p> : null}
 
-                <p className="muted small">Gift code: JOKE-RESUME</p>
+              
               </div>
             </>
           ) : (

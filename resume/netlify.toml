@@ -1,0 +1,10 @@
+[build]
+  base = "resume"
+  command = "npm install && npm run build"
+  publish = "resume/dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
