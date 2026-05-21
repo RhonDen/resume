@@ -227,16 +227,16 @@
 }
 
 .itemSubtitle {
-  color: var(--text);
-  opacity: 0.88;
+  color: #ffffff;
+  opacity: 1;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .itemDate {
   white-space: nowrap;
-  color: var(--text);
-  opacity: 0.85;
+  color: #ffffff;
+  opacity: 1;
   font-size: 14px;
   text-align: right;
   min-width: 180px;
@@ -411,8 +411,8 @@
 }
 
 .muted {
-  color: var(--text);
-  opacity: 0.85;
+  color: #ffffff;
+  opacity: 1;
   margin: 6px 0 16px;
 }
 
